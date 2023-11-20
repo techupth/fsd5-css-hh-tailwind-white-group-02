@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: sans-serif;
+}
+
+@layer components {
+  p {
+    @apply text-zinc-600 text-xl text-left pb-4;
+  }
+  label {
+    @apply font-bold  flex w-72 flex-col text-left;
+  }
+  .boxes {
+    @apply flex w-72 items-end gap-10 mb-4;
+  }
+  input {
+    @apply w-48 p-1 border border-zinc-200 rounded-md shadow-sm
+    focus:outline-none;
+  }
+  input:hover {
+    @apply border-violet-500;
+  }
+  input:focus {
+    @apply border-violet-300;
+  }
+
+  .button-div {
+    @apply p-1  rounded-full  flex space-x-1  justify-center;
+  }
+  .signIn-btn {
+    @apply text-white bg-violet-600 w-2/4 focus:outline-none rounded-full  p-1;
+  }
+  .signIn-btn:hover {
+    @apply bg-violet-400;
+  }
+  .signIn-btn:active {
+    @apply bg-violet-600;
+  }
+  .signIn-btn:focus {
+    @apply ring-2 ring-violet-300;
+  }
+
+  .signUp-btn {
+    @apply bg-white text-violet-600  w-2/4 focus:outline-none rounded-full  p-1;
+  }
+  .signUp-btn:hover {
+    @apply bg-violet-100;
+  }
+  .signUp-btn:focus {
+    @apply ring-2 ring-violet-300 text-violet-600;
+  }
+}
