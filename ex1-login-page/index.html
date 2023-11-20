@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body>
+    <div
+      class="webpage w-screen h-screen flex flex-col justify-center items-center bg-slate-200"
+    >
+      <form
+        class="w-min flex flex-col justify-center items-start bg-white rounded-xl gap-4"
+      >
+        <span class="ml-8 text-zinc-600 text-xl mt-5">Login to Website</span>
+        <section class="line-email ml-8 flex flex-row gap-2 w-4/5">
+          <label class="font-bold w-20">Email</label>
+          <input
+            class="w-3/4 rounded-xl border-solid border-2 p-2 border-zinc-600 hover:border-violet-500 focus:border-violet-300 focus:outline-none"
+            type="email"
+          />
+        </section>
+        <section class="line-password ml-8 flex flex-row gap-2 w-4/5">
+          <label class="font-bold w-20">password</label>
+          <input
+            type="password"
+            class="w-3/4 rounded-xl border-solid border-2 p-2 border-zinc-600 hover:border-violet-500 focus:border-violet-300 focus:outline-none"
+          />
+        </section>
+        <section class="button ml-8 flex flex-row w-4/5 mb-8 gap-3">
+          <button
+            class="sign-in w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring-violet-300 focus:ring-2"
+          >
+            Sign in
+          </button>
+          <button
+            class="sign-up w-36 p-2 rounded-full text-violet-500 hover:bg-violet-100 focus:ring-2 focus:ring-violet-300 focus:text-violet-600"
+          >
+            Sign up
+          </button>
+        </section>
+      </form>
+    </div>
+  </body>
 </html>
